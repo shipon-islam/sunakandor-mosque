@@ -17,7 +17,7 @@ export default function TarabiRaqatCount() {
     const text = "Assalamu Alaikum Wa Rahmatullah";
     const salams = transcript.match(new RegExp(text, "gi"));
     if (salams && salams.length % 2 === 0) {
-      setRakatDetector(salams.length / 2);
+      setRakatDetector(salams.length);
     }
   }, [transcript]);
 
